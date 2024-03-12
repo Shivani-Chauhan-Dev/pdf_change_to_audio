@@ -1,11 +1,11 @@
 import PyPDF2
 import pyttsx3
 
-User = input("please enter the pdf path: ")
+Path = input("please enter the pdf path: ")
 Page_no =int(input("please enter the page number: "))
-path = open(User,"rb")
+file = open(Path,"rb")
 
-reader = PyPDF2.PdfReader(path) 
+reader = PyPDF2.PdfReader(file) 
 
 
 from_page = reader.pages[Page_no]
